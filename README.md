@@ -2,6 +2,9 @@
 
 Toolkit for developing graphical interfaces
 
+# Pypi
+
+[tomwidgets · PyPI](https://pypi.org/project/tomwidgets/)
 
 # Usage:
 

@@ -1,4 +1,3 @@
-import requests
 import re
 from urllib.parse import urlparse
 
@@ -110,6 +109,8 @@ class Crawler(BaseWin):
         self.searchInDownloaded()
 
     def downloadHtml(self):
+        import requests
+
         url = self.urlBar.getValue().strip()
         
         if not url:

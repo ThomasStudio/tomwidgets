@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "tomwidgets"
+version = "0.2.0"
+description = "Customize widgets and theme tool, based on tkinter"
+authors = [{ name = "Thomas Mei" }]
+requires-python = ">=3.7"
+dependencies = ["customtkinter", "jinja2"]
+
+[project.optional-dependencies]
+dev = []

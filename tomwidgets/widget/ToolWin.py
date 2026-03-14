@@ -50,6 +50,8 @@ class ToolWin(BaseWin):
                 item[1].append(("tools.ini", lambda: openConfigWin(
                     self.win, title="tools.ini", configFile=self.toolsFile)),
                 )
+                item[1].append(("Reload tools", self.refreshTools))
+                
 
         return cmds
 
@@ -69,6 +71,10 @@ class ToolWin(BaseWin):
 
     def createToolInterface(self):
         """Create the tabbed interface for tools."""
+        # Destroy existing tabview if it exists
+        if self.tabview:
+            self.tabview.destroy()
+        
         # Create Tabview
         self.tabview = Tabview(self.contentFrame, anchor="nw")
         self.tabview.pack(fill=tk.BOTH, expand=True)

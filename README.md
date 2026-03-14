@@ -29,3 +29,16 @@ Toolkit for developing graphical interfaces
 
 * Download code
 * run main.py
+
+
+## tools.ini
+
+* ToolWin() will automatically generate a tools.ini
+* ToolWin has a parameter toolsFile, which can specify tools.ini
+  * For example: use temp\\\tools.ini
+  * ```
+    from tomwidgets import ToolWin
+
+    if __name__ == "__main__":
+        ToolWin(toolsFile="temp\\tools.ini").show()
+    ```
